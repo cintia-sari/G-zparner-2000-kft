@@ -1,3 +1,11 @@
+/*színek*/
+:root {
+   --green-color: #1F6521; 
+   --light-green-color: #1f6521a0;
+   --yellow-color: #e7e70d;
+   --light-yellow-color:#e7e70da1;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -25,4 +33,43 @@ body{
     color:#1F6521;
     background-color: #E5E5E5;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    min-width:200px;
+    min-width:200px;}
+
+    /*Navigációs menü*/
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        position:fixed;
+        z-index: 1;
+        background-color: var(--light-green-color) ;
+        width: 100%;
+        align-items: center;
+        transition: .5s;
+    }
+
+    nav:hover{
+        background-color: var(--green-color);
+    }
+
+    nav img {
+        height: 60px;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    nav ul li a {
+        padding: 1vw;
+        color: var(--yellow-color);
+        font-weight: 900;
+        text-decoration: none;
+    }
+
+    /*hero*/
+
+    #Főoldal {
+        background-image: url(./src/img/főkép.jpg);
+    }
