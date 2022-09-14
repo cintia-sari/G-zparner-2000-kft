@@ -70,6 +70,28 @@ body{
 
     /*hero*/
 
-    #Főoldal {
-        background-image: url(./src/img/főkép.jpg);
+    header div {
+       display: flex; 
+       height: 100%;
+       width: 40%;
+       background-color: var(--light-yellow-color);
     }
+
+   header div h1 {
+    
+    align-self: center
+    ;
+
+   }
+
+
+   #Főoldal {
+    background-image: url(./src/img/főkép.jpg);
+    height: 50vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+
+   }
