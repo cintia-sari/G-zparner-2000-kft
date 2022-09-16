@@ -147,3 +147,79 @@ body{
    .fő-tulajdonság-leírás h2 {
     margin-bottom: 30px;
    }
+
+   /*Szolgáltatásaink*/
+
+   #Szolgáltatásaink img {
+    width:50vw;
+   }
+
+   #Szolgáltatásaink .szöveg {
+    width: 50%;
+    background-color: var(--yellow-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 250px;
+    padding:20px 10px
+   }
+
+   #Szolgáltatásaink .szöveg h3 {
+    margin-bottom: 3vw;
+
+   }
+
+   #Szolgáltatásaink .jobb {
+    display: flex;
+   }
+
+   #Szolgáltatásaink .bal {
+    display: flex;
+    flex-direction: row-reverse
+   }
+
+   #Szolgáltatásaink .jobb .víz {
+    /*object-fit: cover;*/
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0), var(--light-yellow-color),var(--yellow-color)), url(./src/img/viz.jpg);
+    width:50vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   }
+
+   #Szolgáltatásaink .bal .gáz {
+    background-image: linear-gradient(to left,rgba(0, 0, 0, 0), var(--light-yellow-color),var(--yellow-color)), url(./src/img/gáz.jpg);
+    width:50vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   }
+
+   #Szolgáltatásaink .jobb .klíma {
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0), var(--light-yellow-color),var(--yellow-color)), url(./src/img/klíma.jpg);
+    width:50vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   }
+
+   #Szolgáltatásaink .bal .fűtés {
+    background-image: linear-gradient(to left,rgba(0, 0, 0, 0), var(--light-yellow-color),var(--yellow-color)), url(./src/img/központi.jpg);
+    width:50vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   }
+
+   #Szolgáltatásaink .jobb .kivitelezés {
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0), var(--light-yellow-color),var(--yellow-color)), url(./src/img/kivitelezés.jpg);
+    width:50vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   }
