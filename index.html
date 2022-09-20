@@ -98,9 +98,10 @@
     </section>
     <section id="Kapcsolat">
         <div><h2 class="cím">Kapcsolat</h2></div>
-        <div>
+        <div class="email">
             <form action="#" method="post" class="contact-contanier">
                 <div class="input-group">
+                    <label class="user-label" for="name-id">Your Name:</label>
                     <input 
                         required=""
                         type="text"
@@ -108,9 +109,10 @@
                         id="name-id"
                         autocomplete="off"
                         class="input">
-                    <label class="user-label" for="name-id">Your Name:</label>
+                    
                 </div>
                 <div class="input-group">
+                    <label class="user-label" for="email-id">Your Name:</label>
                     <input 
                         required=""
                         autocomplete="off"
@@ -118,24 +120,26 @@
                         type="text"
                         name="name"
                         id="email-id">
-                    <label class="user-label" for="email-id">Your Name:</label>
                 </div>
                 <div class="input-group">
+                    <label class="user-label">Message:</label>
                     <textarea
                     required=""
                     type="text" 
                     name="message"
                     autocomplete="off"
                     class="input"  ></textarea>
-                    <label class="user-label">Message:</label>
                 </div>
-                <button class="button" type="submit" value="SUBMIT">SUBMIT</button>
+                <div class="button.div">
+                    <button class="button" type="submit" value="SUBMIT">SUBMIT</button>
+                </div>
+                
             
              </form>
         </div>
-        <div>
-            <div><img src="./src/img/térkép.png" alt="térkép"></div>
-            <div>
+        <section class="Kapcsolat-2">
+            <div class="térkép"><img src="./src/img/térkép.png" alt="térkép"></div>
+            <div class="elérhetőség">
                 <div>
                     <img src="./src/icons/location.svg" alt="cím">
                     <h4>9019 Győr, Aba Sámuel u. 26 </h4>
@@ -149,7 +153,7 @@
                     <h4>gazpartner@t-online.hu</h4>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
 </body>
 <footer>

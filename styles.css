@@ -156,7 +156,7 @@ body{
 
    #Szolgáltatásaink .szöveg {
     width: 50%;
-    background-color: var(--yellow-color);
+    background-color: var(--light-yellow-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,10 +216,97 @@ body{
    }
 
    #Szolgáltatásaink .jobb .kivitelezés {
-    background-image: linear-gradient(to right,rgba(0, 0, 0, 0), var(--light-yellow-color),var(--yellow-color)), url(./src/img/kivitelezés.jpg);
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0), var(--light-yellow-color),var(--light-yellow-color)), url(./src/img/kivitelezés.jpg);
     width:50vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
    }
+
+/*Referencia*/
+
+/*Kapcsolat*/
+
+#Kapcsolat{
+background-color: var(--light-yellow-color);
+}
+
+.email form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email form div input,label,textarea{
+width: 80%;
+margin:2px;
+}
+
+.email form div textarea{
+    height: 150px;
+    padding: 10px;
+}
+
+.email form div input{
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.email form div input,textarea{
+    border: 1px solid var(--green-color);
+    background-color: var(--light-green-color);
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.email form div input:hover,textarea:hover{
+    background-color: var(--green-color);
+    color:white;
+}
+
+button{
+    height: 60px;
+    width: 130px;
+    margin-bottom: 50px;
+    background-color: var(--light-green-color);
+    border: 1px solid var(--green-color);
+    border-radius: 10px;
+    color: var(--yellow-color)
+}
+
+
+button:hover{
+    border: 1px solid;
+    background-color:  var(--green-color);
+    border: 1px solid var(--green-color);
+    color: var(--yellow-color)
+}
+
+/*Kapcsolat-2*/
+
+.Kapcsolat-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.Kapcsolat-2 .térkép img {
+    width: 70vw ;
+    padding-bottom: 50px;
+}
+
+
+
+.Kapcsolat-2 .elérhetőség div{
+    display: flex;
+   flex-direction:reverse;
+   align-items: center;
+    margin-bottom: 20px;
+}
+
+.Kapcsolat-2 .elérhetőség div img {
+    color: var(--green-color);
+}
