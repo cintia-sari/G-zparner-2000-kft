@@ -80,8 +80,9 @@ body{
     header div {
        display: flex; 
        height: 100%;
-       width: 40%;
+       width: 100%;
        background-color: var(--light-yellow-color);
+       text-align: center;
     }
 
    header div h1 {
@@ -142,10 +143,16 @@ body{
     background-image: linear-gradient(var(--light-green-color), var(--light-green-color)), url(./src/img/bemutatkozó\ kép.jpg);
     color: var(--yellow-color);
     padding: 30px;
+    min-height: 600px;
    }
 
    .fő-tulajdonság-leírás h2 {
     margin-bottom: 30px;
+    width: 200px;
+   }
+
+   .fő-tulajdonság-leírás h3 {
+    max-width: 400px;
    }
 
    /*Szolgáltatásaink*/
@@ -166,8 +173,13 @@ body{
 
    #Szolgáltatásaink .szöveg h3 {
     margin-bottom: 3vw;
-
    }
+
+   #Szolgáltatásaink .szöveg h4{
+    text-align: center;
+   }
+
+
 
    #Szolgáltatásaink .jobb {
     display: flex;
@@ -273,7 +285,7 @@ button{
     background-color: var(--light-green-color);
     border: 1px solid var(--green-color);
     border-radius: 10px;
-    color: var(--yellow-color)
+    color: var(--light-yellow-color)
 }
 
 
@@ -314,13 +326,33 @@ button:hover{
 @media screen and (min-width: 720px){}
 @media screen and (min-width: 720px) {
 
+    header div {
+        width: 40%;
+    }
+
     .fő-tulajdonság{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     justify-content: space-around;
+    }
     
-}
+    .email form div input,label,textarea{
+        max-width:600px;}
+
+        .Kapcsolat-2 .térkép img{
+            max-width:300px ;
+        }
+        .Kapcsolat-2{
+            flex-direction: row;
+            justify-content:space-around;
+        }
     
 
+}
+
+@media screen and (min-width: 960px) {
+    .Kapcsolat-2{
+        margin: 0 15vw;
+    }
 }
