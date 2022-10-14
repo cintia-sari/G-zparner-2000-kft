@@ -1,9 +1,9 @@
 /*színek*/
 :root {
-   --green-color: #1F6521; 
+   --green-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); 
    --light-green-color: #1f6521a0;
    --yellow-color: #e7e70d;
-   --light-yellow-color:#e7e70da1;
+   --light-yellow-color:#5c5c5591;
 }
 
 * {
@@ -13,8 +13,19 @@
     user-select:none;
     font-size:1rem
 }
-h1{
+
+h1 {
+    margin-top: 10%;
+}
+h1,a{
 font-size:30px ;
+color: white;
+text-align: left;
+}
+
+h1 a {
+    color: var(--yellow-color);
+    display: block;
 }
 
 h2{
@@ -37,7 +48,7 @@ font-size:15px ;
    }
 
 body{
-    color:#1F6521;
+    color:#090909;
     background-color: #E5E5E5;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-width:200px;}
@@ -66,7 +77,6 @@ body{
     position: absolute;
     width: 100%;
     height: 3px;
-    background-color: var(--light-yellow-color);
 }
 
 .hamburger-lines,
@@ -76,8 +86,8 @@ body{
     position: absolute;
     width: 100%;
     height: 3px;
-    background-color: var(--light-yellow-color);
-    transition-duration: 0.3s;
+    background-color: var(--yellow-color);
+    transition: 0.3s;
 }
 
 
@@ -98,7 +108,7 @@ top: -10px;
     width: 100%;
     padding: 100px 0;
     height: 100%;
-    background-color: var(--light-green-color);
+    background-color:rgba(0, 0, 0, 0.9);
     visibility: hidden;
 }
 
@@ -144,14 +154,15 @@ top: -10px;
         display: flex;
         position: sticky;
         z-index: 1;
-        background-color:#1f6521a0 ;
+        background-color:rgba(0, 0, 0, 0.4);
         width: 100%;
         align-items: center;
         top:0;
+        transition-duration: 0.3s;
     }
 
-    nav:hover{
-        background-color: #1F6521;
+    nav:hover {
+        background-color: rgba(0, 0, 0, 0.7);
     }
 
     nav img {
@@ -193,31 +204,43 @@ nav ul li a:before {
 
     /*hero*/
 
-    header div {
-       display: flex; 
-       height: 100%;
-       width: 100%;
-       background-color: var(--light-yellow-color);
-       text-align: center;
+    header{
+        padding-top: 70px;
+        top:-70px;
+        display: flex; 
+        flex-direction: column;
     }
 
-   header div h1 {
-    
-    align-self: center
-    ;
+    header  {
+       height: 100%;
+       width: 100%;
+       background-color: var(--green-color);
+    }
+    header div h1, button, h4 {
+        margin-left: 30px;
+    }
 
-   }
+    header button{
+        margin-top: 5%;
+    }
+
+    header h4{
+        color: white;
+        margin-top: 5%;
+      max-width:500px;
+    }
 
 
    #Főoldal {
-    background-image: url(./src/img/főkép.jpg);
-    height: 50vw;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./src/img/főkép.jpg);
+    min-height: 600px;
+    height: 100vw;
+    max-height: 800px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     display: flex;
-
    }
 
    /*Rólunk*/
@@ -396,25 +419,23 @@ margin:2px;
 }
 
 button{
-    height: 60px;
-    width: 130px;
-    margin-bottom: 50px;
-    background-color: var(--light-green-color);
-    border: 1px solid var(--green-color);
-    border-radius: 10px;
-    color: var(--light-yellow-color);
+    max-width: 180px;
+    padding: 20px;
+    border: 1px solid;
+    background-color:  var(--green-color);
+    border: 1px solid var(--yellow-color);
+    color: var(--yellow-color);
+    box-shadow: 5px 5px 1px var(--yellow-color);
     transition: 0.5s;
 }
 
 
 button:hover{
-    border: 1px solid;
-    background-color:  var(--green-color);
+    background-color: var(--yellow-color);
     border: 1px solid var(--green-color);
-    color: var(--yellow-color);
-    box-shadow: 5px 5px 1px var(--light-green-color);
+   box-shadow: 5px 5px 1px var(--green-color);
+   text-shadow: 0.8px 0.8px 0px rgb(64, 60, 60);
 }
-
 button:active {
     transform: scale(0.95);
     box-shadow: 0px 0px 0px;
@@ -450,9 +471,6 @@ button:active {
 @media screen and (min-width: 720px){}
 @media screen and (min-width: 720px) {
 
-    header div {
-        width: 40%;
-    }
 
     .fő-tulajdonság{
     flex-wrap: wrap;
@@ -471,11 +489,17 @@ button:active {
             flex-direction: row;
             justify-content:space-around;
         }
-    
 
 }
 
 @media screen and (min-width: 800px) {
+
+    #Főoldal {
+        padding-left: 80PX;
+    }
+    h1,h1 a{
+        font-size: 40px;
+    }
     .hamburger__button{
         visibility: hidden;
     }
@@ -508,7 +532,6 @@ button:active {
         padding-right: 15px;
         margin:0px;
     }
-    
     
 }
 
