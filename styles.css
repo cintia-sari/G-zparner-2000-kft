@@ -37,9 +37,6 @@ h1 a {
     display: block;
 }
 
-h2{
-font-size:30px ;
-}
 
 h3{
 font-size:20px ;
@@ -50,10 +47,11 @@ font-size:15px ;
 }
 
 .cím {
+    font-size: 30px;
     display: flex;
     margin-top: 40px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    margin-bottom: 40px;
+    margin-left: 30px;
    }
 
 
@@ -281,7 +279,7 @@ nav ul li a:before {
     flex-direction: column;
     align-items: center;
     width: 300px;
-    height: 400px;
+    height: 300px;
     margin-bottom: 50px;
    }
 
@@ -309,7 +307,6 @@ nav ul li a:before {
 
    .fő-tulajdonság-leírás h2 {
     margin-bottom: 30px;
-    
    }
 
    .fő-tulajdonság-leírás h3 {
@@ -406,9 +403,7 @@ nav ul li a:before {
 
 /*Kapcsolat*/
 
-#Kapcsolat{
-background-color: var(--light-yellow-color);
-}
+
 
 .email form div{
     display: flex;
@@ -480,20 +475,47 @@ button:active {
 .Kapcsolat-2 .térkép img {
     width: 70vw ;
     padding-bottom: 50px;
+    fill: var(--yellow-color);
 }
 
+.Kapcsolat-2 .elérhetőség{
+    display: flex;
+    justify-content:center;
+    flex-direction: column; 
 
+}
 
 .Kapcsolat-2 .elérhetőség div{
     display: flex;
-   flex-direction:reverse;
-   align-items: center;
-    margin-bottom: 20px;
+    flex-direction: column; 
+    text-align: center;
+    align-items: center;
+    margin: 0px 20px;
+    max-width: 200px;
+    padding: 40px;
+}
+
+.Kapcsolat-2 .elérhetőség div h4 {
+    text-align: center;
+    margin-left: 0px;
+}
+
+.Kapcsolat-2 .elérhetőség div h4:nth-child(2) {
+    color: var(--yellow-color);
+    text-shadow: 1px 1px 4px rgba(33, 31, 31, 0.63);
+    font-size: 25px;
+}
+
+.Kapcsolat-2 .elérhetőség div:nth-child(2){
+    border-style: solid none solid none;
+    border-color: #e7e70d;
 }
 
 .Kapcsolat-2 .elérhetőség div img {
-    color: var(--green-color);
+    filter: drop-shadow( 1px 1px 4px rgba(33, 31, 31, 0.63));
 }
+
+
 
 @media screen and (min-width: 720px){}
 @media screen and (min-width: 720px) {
@@ -560,6 +582,21 @@ button:active {
         margin:0px;
     }
     
+    .Kapcsolat-2 .elérhetőség{
+        flex-direction: row;
+        padding: 0 40px;
+    }
+    .Kapcsolat-2 .elérhetőség div{
+        padding: 0 60px;
+        max-width: 300px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .Kapcsolat-2 .elérhetőség div:nth-child(2){
+        border-style: none solid none solid;
+    }
+        
 }
 
 @media screen and (min-width: 960px) {
