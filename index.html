@@ -130,7 +130,6 @@
         <div class="email">
             <form action="#" method="post" class="contact-contanier">
                 <div class="input-group">
-                    <label class="user-label" for="name-id">Your Name:</label>
                     <input 
                         required=""
                         type="text"
@@ -138,10 +137,9 @@
                         id="name-id"
                         autocomplete="off"
                         class="input">
-                    
+                        <label class="user-label" for="name-id">Your Name:</label>
                 </div>
                 <div class="input-group">
-                    <label class="user-label" for="email-id">Your Name:</label>
                     <input 
                         required=""
                         autocomplete="off"
@@ -149,14 +147,16 @@
                         type="text"
                         name="name"
                         id="email-id">
+                        <label class="user-label" for="email-id">Your Name:</label>
                 </div>
                 <div class="input-group">
-                    <label class="user-label">Message:</label>
                     <textarea
                     required="" 
                     name="message"
                     autocomplete="off"
-                    class="input"  ></textarea>
+                    class="input"  >
+                </textarea>
+                <label class="user-label">Message:</label>
                 </div>
                 <div class="button.div">
                     <button class="button" type="submit" value="SUBMIT">SUBMIT</button>

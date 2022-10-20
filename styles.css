@@ -403,42 +403,77 @@ nav ul li a:before {
 
 /*Kapcsolat*/
 
-
-
-.email form div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+ #Kapcsolat {
+    background-color:  rgba(0, 0, 0, 0.9);
+    position: relative;
 }
 
-.email form div input,label,textarea{
-width: 80%;
-margin:2px;
+.email {
+    position: absolute;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    min-width: 300px;//??
+    max-width: 600px;//??
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
 }
 
-.email form div textarea{
-    height: 150px;
-    padding: 10px;
-}
+.email .input-group {
+    position: relative;
+  }
 
-.email form div input{
-    height: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.email form div input,textarea{
-    border: 1px solid var(--green-color);
-    background-color: var(--light-green-color);
-    margin-bottom: 10px;
+/**.email {
+    position: absolute;
+    top:250px;
+    margin-left: 300px;
+    min-width: 300px
+    max-width: 600px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
+  }
+  
+  .email .input-group {
+    position: relative;
+  }
+  
+  .email .input-group input, textarea{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .email .input-group label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
     transition: .5s;
-}
+  }
+  
+  .email .input-group input:focus ~ label,
+  .email .input-group input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }**/
+  
 
-.email form div input:hover,textarea:hover{
-    background-color: var(--green-color);
-    color:white;
-}
+
 
 button{
     max-width: 180px;
@@ -464,6 +499,8 @@ button:active {
 }
 
 /*Kapcsolat-2*/
+
+
 
 .Kapcsolat-2 {
     display: flex;
