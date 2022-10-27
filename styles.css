@@ -96,7 +96,7 @@ body{
     width: 100%;
     height: 3px;
     background-color: var(--yellow-color);
-    transition: 0.3s;
+    transition: 0.3s; 
 }
 
 
@@ -116,8 +116,7 @@ top: -10px;
     top: 0;
     width: 100%;
     padding: 100px 0;
-    height: 100%;
-    background-color:rgba(0, 0, 0, 0.9);
+    height: 120vw;
     visibility: hidden;
 }
 
@@ -131,6 +130,9 @@ top: -10px;
 
 #menu__toggle:checked ~ .menu-box {
     visibility: visible;
+}
+#menu__toggle:checked ~  nav{
+    backdrop-filter: none; 
 }
 
 #menu__toggle:checked ~ .hamburger__button .hamburger-lines{
@@ -163,7 +165,12 @@ top: -10px;
         display: flex;
         position: fixed;
         z-index: 2;
-        background-color:rgba(0, 0, 0, 0.4);
+        background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.4));
+        border-style: solid;
+        border-width: 0.5px;
+        border-image: linear-gradient(to top,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.41)) 1;        
+        box-shadow: 4px 6px 14px rgba(0, 0, 0, 0.129), 20px 24px 94px rgba(0, 0, 0, 0.25), 13px 13px 132px rgba(0, 0, 0, 0.20);
+        backdrop-filter: blur(3px); 
         width: 100%;
         align-items: center;
         top:0px;
@@ -171,9 +178,7 @@ top: -10px;
         transition-duration: 0.3s;
     }
 
-    nav:hover {
-        background-color: rgba(0, 0, 0, 0.7);
-    }
+
 
     nav img {
         height: 60px;
@@ -403,6 +408,11 @@ nav ul li a:before {
 
 /*Kapcsolat*/
 
+#Kapcsolat .cím {
+    padding-top: 30px;
+    color: var(--yellow-color);
+}
+
  #Kapcsolat {
     background-color:  rgba(0, 0, 0, 0.9);
 }
@@ -424,6 +434,7 @@ nav ul li a:before {
   }
 
   .email .input-group input, textarea{
+
    width: 100%;
    font-size: 16px;
    color:white;
@@ -445,21 +456,12 @@ nav ul li a:before {
   .email .input-group label{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 8px;
     color: var(--yellow-color);
     font-size: 16px;
     pointer-events: none ;
     transition: 0.5s;
   }
-
-  /*.input:focus ~ label, 
-    input:valid ~ label,
-     textarea:valid ~ label{
-    top: -20px;
-    left: 5px;
-    font-size: 14px;
-    color: white;
-  }*/
 
   .input-group input:focus ~ label,
   .input-group input:valid ~ label,
@@ -470,6 +472,10 @@ nav ul li a:before {
     left: 5px;
     font-size: 14px;
     color: white;
+}
+
+textarea {
+    white-space: normal;
 }
 
 
