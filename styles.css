@@ -12,6 +12,7 @@ html{
     user-select: none;
     resize: none;
     scroll-behavior: smooth;
+    min-width: 400px;
 } 
 
 * {
@@ -118,6 +119,7 @@ top: -10px;
     padding: 100px 0;
     height: 120vw;
     visibility: hidden;
+    background-color: #090909;
 }
 
 .menu-item a,
@@ -149,17 +151,6 @@ top: -10px;
     transform: rotate(-90deg);
     top:0;
 }
-
-
-
-
-
-
-
-
-
-
-
 
     nav {
         display: flex;
@@ -221,7 +212,7 @@ nav ul li a:before {
     /*hero*/
 
     header{
-        padding-top: 70px;
+        padding-top: 150px;
         top:-70px;
         display: flex; 
         flex-direction: column;
@@ -250,7 +241,7 @@ nav ul li a:before {
    #Főoldal {
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./src/img/főkép.jpg);
     min-height: 600px;
-    height: 100vw;
+    height: 120vw;
     max-height: 800px;
     background-position: center;
     background-repeat: no-repeat;
@@ -258,6 +249,16 @@ nav ul li a:before {
     position: relative;
     display: flex;
    }
+
+   #Főoldal button {
+    margin-left:30px;
+    margin-top: 80px;
+   }
+
+   #Főoldal button a:hover{
+    color:#090909
+   }
+
 
    /*Rólunk*/
 
@@ -418,15 +419,23 @@ nav ul li a:before {
 }
 .email.box {
     position: relative;
+    display: flex;
+   flex-direction: column;
+   align-items:center;
 }
 
 .email {
+    display: flex;
     margin-top: 100px;
     position: absolute;
-    right: 10vw;
+    /**right: 10vw;
     left: 10vw;
-    width: 80vw;
+    width: 80vw;*/
+    min-width: 100%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
 
 .email .input-group {
@@ -434,8 +443,7 @@ nav ul li a:before {
   }
 
   .email .input-group input, textarea{
-
-   width: 100%;
+    min-width: 300px;
    font-size: 16px;
    color:white;
    margin-bottom: 30px;
@@ -495,12 +503,13 @@ button{
 
 
 button:hover{
-    background-color: var(--yellow-color);
+    background-color: rgba(231, 231, 13,0.7);
     border: 1px solid var(--green-color);
    box-shadow: 5px 5px 1px var(--green-color);
    text-shadow: 0.8px 0.8px 0px rgb(64, 60, 60);
-   color: #090909;
+   color: rgb(7, 7, 7);
 }
+
 button:active {
     transform: scale(0.95);
     box-shadow: 0px 0px 0px;
@@ -569,8 +578,6 @@ button:active {
     justify-content: space-around;
     }
     
-    .email form div input,label,textarea{
-        max-width:600px;}
 
         .Kapcsolat-2 .térkép img{
             max-width:300px ;
@@ -579,7 +586,8 @@ button:active {
             flex-direction: row;
             justify-content:space-around;
         }
-
+        .email .input-group input, textarea{
+            min-width: 400px;}
 }
 
 @media screen and (min-width: 800px) {
@@ -637,6 +645,9 @@ button:active {
     .Kapcsolat-2 .elérhetőség div:nth-child(2){
         border-style: none solid none solid;
     }
+
+    .email .input-group input, textarea{
+        min-width: 500px;}
         
 }
 
