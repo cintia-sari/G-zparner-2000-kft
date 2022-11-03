@@ -47,6 +47,10 @@ h4{
 font-size:15px ;
 }
 
+h5{
+    font-size:13px 
+}
+
 .cím {
     font-size: 30px;
     display: flex;
@@ -281,6 +285,8 @@ nav ul li a:before {
 
    .fő-tulajdonság-box {
     /*box-shadow: 5px 5px 0px rgba(74, 73, 73, 0.037);*/
+   background-color: #090909;
+   color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -290,13 +296,22 @@ nav ul li a:before {
    }
 
    .fő-tulajdonság-box img {
+    background-color: #090909;
+    border-radius: 40px;
+    padding: 10px;
     height: 80px;
-    margin-top: 10px;
+    margin-top: -40px;
     margin-bottom:30px;
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.3));
    }
 
    .fő-tulajdonság-box h4 {
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-left:20px;
+   }
+
+   .fő-tulajdonság-box h5 {
     margin-top: 25px;
     margin-right: 20px;
     margin-left:20px;
