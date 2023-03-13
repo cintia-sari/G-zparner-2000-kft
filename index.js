@@ -1,5 +1,3 @@
-
-
 const menuLinks = document.querySelectorAll('.menu-box a');
 
 function closeHamburgerMenu() {
