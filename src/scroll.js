@@ -7,7 +7,7 @@ const onScroll = (event) =>{
         event.target.scrollingElement.scrollTop;
 
     if(scrollPosition > 170 ){
-        banner.style.backgroundSize ="300%";
+        banner.style.backgroundSize ="400%";
         proba.style.opacity = 0;
         proba.style.translate = "0 -50px";
         proba.style.scale = "0.9";
