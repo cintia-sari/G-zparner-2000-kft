@@ -174,7 +174,7 @@ top: -10px;
         align-items: center;
         top:0px;
         margin-bottom: 200px;
-        transition-duration: 0.3s;
+        transition: .5s;
     }
 
 
@@ -211,12 +211,7 @@ nav ul li a:hover:after{
   width:100%;
 }
 
-/*nav ul li a:hover,*/
-
-nav ul li a:after
- {
-   transition: .5s;
- }
+ 
 
  li::marker{
     color: #00000000;
@@ -555,6 +550,10 @@ button:active {
         }
         .email .input-group input, textarea{
             min-width: 400px;}
+    
+nav ul li a:after{
+   transition: .5s;
+ }
 }
 
 @media screen and (min-width: 800px) {
