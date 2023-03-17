@@ -211,8 +211,6 @@ nav ul li a:hover:after{
   width:100%;
 }
 
- 
-
  li::marker{
     color: #00000000;
  }
