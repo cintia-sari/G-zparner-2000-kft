@@ -527,7 +527,7 @@ button:active {
 
 /*Kapcsolat -> cím*/
 .map-container{
-padding: 0 200px;
+padding: 0 10%;
 }
 
 .map-container h3{
