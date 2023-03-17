@@ -369,16 +369,36 @@ font-size: 15px;  }
 
 /*Referencia*/
 
+
+
 /*Kapcsolat*/
 
-#Kapcsolat .cím {
-    padding-top: 30px;
+
+.kapcsolat-nav-div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.kapcsolat-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.kapcsolat-nav h3{
+    font-size: 20px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 30px;
+    text-align: center;
     color: var(--yellow-color);
 }
 
- #Kapcsolat {
-    background-color:  rgba(0, 0, 0, 0.9);
-}
+/*Kapcsolat -> írj nekünk*/
+
 .email.box {
     position: relative;
     display: flex;
@@ -388,11 +408,7 @@ font-size: 15px;  }
 
 .email {
     display: flex;
-    margin-top: 100px;
     position: absolute;
-    /**right: 10vw;
-    left: 10vw;
-    width: 80vw;*/
     min-width: 100%;
     box-sizing: border-box;
     display: flex;
@@ -477,57 +493,55 @@ button:active {
     box-shadow: 0px 0px 0px;
 }
 
-/*Kapcsolat-2*/
-
-
-
-.Kapcsolat-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 50px;
+/*Kapcsolat -> egyéb elérhetőség*/
+.kapcsolatDiv{
+    padding-bottom: 80px;
 }
 
-.Kapcsolat-2 .elérhetőség{
-    display: flex;
-    justify-content:center;
-    flex-direction: column; 
-    margin-top: 580px;
-
+#Kapcsolat .kapcsolatDiv .egyéb-elérhetőség-container{
+   margin:0 15% ;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:center
 }
 
-.Kapcsolat-2 .elérhetőség div{
-    display: flex;
-    flex-direction: column; 
+#Kapcsolat .kapcsolatDiv div .egyéb-elérhetőség-div{
+    display: inline-block;
+    border:1px solid var(--yellow-color);
+    box-shadow: 5px 5px 15px var(--yellow-color);
+    margin: 20px;
+    min-width: 350px;
+    padding:15px;
+}
+
+.kapcsolat-név{
+    font-size: 20px;
+    margin:15px;
+}
+
+.kapcsolat-elérhetőség{
+    font-size: 15px;
+    margin: 5px;
+    margin-left: 30px;
+}
+
+/*Kapcsolat -> cím*/
+.map-container{
+padding: 0 200px;
+}
+
+.map-container h3{
     text-align: center;
-    align-items: center;
-    margin: 0px 20px;
-    max-width: 200px;
-    padding: 40px;
+    margin-bottom: 50px;
 }
 
-.Kapcsolat-2 .elérhetőség div h4 {
-    text-align: center;
-    margin-left: 0px;
-    color: white;
+.map-container iframe {
+    width:100%;
+    height:350px;
+    border:1px solid var(--yellow-color);
+    box-shadow: 5px 5px 15px var(--yellow-color);
+
 }
-
-.Kapcsolat-2 .elérhetőség div h4:nth-child(2) {
-    color: var(--yellow-color);
-    text-shadow: 1px 1px 4px rgba(33, 31, 31, 0.63);
-    font-size: 25px;
-}
-
-.Kapcsolat-2 .elérhetőség div:nth-child(2){
-    border-style: solid none solid none;
-    border-color: #e7e70d;
-}
-
-.Kapcsolat-2 .elérhetőség div img {
-    filter: drop-shadow( 1px 1px 4px rgba(33, 31, 31, 0.63));
-}
-
-
 
 @media screen and (min-width: 720px){}
 @media screen and (min-width: 720px) {
@@ -541,19 +555,20 @@ button:active {
     }
     
 
-        .Kapcsolat-2 .térkép img{
-            max-width:300px ;
-        }
-        .Kapcsolat-2{
-            flex-direction: row;
-            justify-content:space-around;
-        }
+
         .email .input-group input, textarea{
             min-width: 400px;}
     
 nav ul li a:after{
    transition: .5s;
  }
+
+
+
+ .kapcsolat-nav h3{
+    margin-left: 30px;
+}
+
 }
 
 @media screen and (min-width: 800px) {
@@ -599,28 +614,9 @@ nav ul li a:after{
         margin:0px;
     }
     
-    .Kapcsolat-2 .elérhetőség{
-        flex-direction: row;
-        padding: 0 40px;
-    }
-    .Kapcsolat-2 .elérhetőség div{
-        padding: 0 60px;
-        max-width: 300px;
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .Kapcsolat-2 .elérhetőség div:nth-child(2){
-        border-style: none solid none solid;
-    }
-
+  
     .email .input-group input, textarea{
         min-width: 500px;}
         
 }
 
-@media screen and (min-width: 960px) {
-    .Kapcsolat-2{
-        margin: 0 15vw;
-    }
-}

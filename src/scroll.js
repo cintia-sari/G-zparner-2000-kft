@@ -26,5 +26,3 @@ const onScroll = (event) =>{
 };
 
 document.addEventListener("scroll", onScroll);
-
-console.log(scrollPosition);
