@@ -367,8 +367,29 @@ font-size: 15px;  }
     padding:15px;
 }
 
-/*Referencia*/
+/*képek*/
 
+.képek-div{
+    display: flex;
+    justify-content: center;
+}
+.galery-img{
+    height: 300px;
+	-webkit-box-reflect: below 15px
+    -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.8, transparent), to(rgba(9, 9, 9, 0.25))); 
+}
+
+.képek-button-div{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.képek-button-div button{
+    margin:0 10px;
+    cursor: pointer;
+}
 
 
 /*Kapcsolat*/
