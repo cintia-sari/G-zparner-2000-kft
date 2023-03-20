@@ -216,30 +216,19 @@ nav ul li a:hover:after{
  }
  
      /*hero*/
- 
-     header{
-         padding-top: 50px;
-         display: flex; 
-         flex-direction: column;
+    
+
+
+     header div h1, .button, h4 {
+         margin-left: 5%;
      }
  
-     header  {
-        height: 100%;
-        width: 100%;
-        background-color: black;
-     }
-     header div h1, button, h4 {
-         margin-left: 30px;
-     }
- 
-     header button{
-         margin-top: 5%;
-     }
- 
+   
      header h4{
          color: white;
          margin-top: 5%;
-       max-width:500px;
+         max-width:500px;
+         min-width: 350px;
      }
 
     .banner, .text, .button{
@@ -249,21 +238,23 @@ nav ul li a:hover:after{
     .banner {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height:1000px;
+        padding-top: 90px;
         background-image:linear-gradient(to right,rgba(0, 0, 0, 0.612), rgba(0, 0, 0, 0.607),rgba(208, 204, 204, 0)),url(./src/img/heroImg.jpg);
         transition: 0.5s;
-        background-size: cover;
+        width: 100%;
+        height: 60%;
+        background-size: 180%;
+        background-position: center;
         background-repeat: no-repeat;
-        background-position: 100% 100%;
+
     }
 
-   #Főoldal button {
-    margin-left:30px;
-    margin-top: 80px;
+   #Főoldal .button {
+    margin-left:5%;
+    margin:20px 5%;
    }
 
-   #Főoldal button a:hover{
+   #Főoldal .button a:hover{
     color:#090909
    }
 
@@ -382,7 +373,7 @@ font-size: 15px;  }
     
 }
 
-.képek-button-div button{
+.képek-button-div .button{
     margin:0 10px;
     cursor: pointer;
 }
@@ -483,7 +474,7 @@ textarea {
 
 
 
-button{
+.button{
     margin-left: 38%;
     max-width: 180px;
     padding: 20px;
@@ -497,7 +488,7 @@ button{
 
 
 
-button:hover{
+.button:hover{
     background-color: rgba(231, 231, 13,0.7);
     border: 1px solid var(--green-color);
    box-shadow: 5px 5px 1px var(--green-color);
@@ -505,7 +496,7 @@ button:hover{
    color: rgb(7, 7, 7);
 }
 
-button:active {
+.button:active {
     transform: scale(0.95);
     box-shadow: 0px 0px 0px;
 }
