@@ -6,43 +6,42 @@ const address = document.querySelector(".address-js");
 function addEmailBox(){
     let html =`
     <div class="email-box">
-    <div class="email">
-        <form action="#" method="post" class="contact-contanier">
-            <div class="input-group">
-                <input 
-                    required
-                    type="text"
-                    name="name"
-                    id="name-id"
-                    autocomplete="off"
-                    class="input">
-                    <label class="user-label" for="name-id">Your Name:</label>
-            </div>
-            <div class="input-group">
-                <input 
-                    required
-                    autocomplete="off"
-                    class="input"
-                    type="email"
-                    name="name"
-                    id="email-id">
-                    <label class="user-label" for="email-id">Your E-mail:</label>
-            </div>
+        <div class="email">
+            <form action="#" method="post" class="contact-contanier">
                 <div class="input-group">
-                    <textarea
-                    required
-                    name="message"
-                    autocomplete="off"
-                    class="input"
-                    ></textarea>
-                <label class="user-label">Message:</label>
-            </div>
-            <div class="button.div">
-                <button class="button" type="submit" value="SUBMIT">SUBMIT</button>
-            </div>
-        </div>   
-        
-         </form>
+                    <input 
+                        required
+                        type="text"
+                        name="name"
+                        id="name-id"
+                        autocomplete="off"
+                        class="input">
+                        <label class="user-label" for="name-id">Your Name:</label>
+                </div>
+                <div class="input-group">
+                    <input 
+                        required
+                        autocomplete="off"
+                        class="input"
+                        type="email"
+                        name="name"
+                        id="email-id">
+                        <label class="user-label" for="email-id">Your E-mail:</label>
+                </div>
+                <div class="input-group">
+                        <textarea
+                        required
+                        name="message"
+                        autocomplete="off"
+                        class="input"
+                        ></textarea>
+                        <label class="user-label">Message:</label>
+                </div>
+                <div class="email-button-div">
+                    <button class="button email-button" type="submit" value="SUBMIT">SUBMIT</button>  
+                </div>
+            </form>
+        </div>  
     </div>`;
     return html
 }

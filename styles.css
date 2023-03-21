@@ -407,8 +407,8 @@
  .email-box {
     position: relative;
     display: flex;
-   flex-direction: column;
-   align-items:center;
+    flex-direction: column;
+    align-items:center;
  }
 
  .email {
@@ -423,6 +423,17 @@
 
  .email .input-group {
     position: relative;
+ }
+
+ .email .input-group input, textarea {
+    min-width: 300px;
+    font-size: 16px;
+    color:white;
+    margin-bottom: 30px;
+    border-style: none;
+    border-bottom: 2px solid var(--yellow-color);
+    outline: none;
+    background: transparent;
  }
 
  .email .input-group textarea {
@@ -441,7 +452,7 @@
     font-size: 16px;
     pointer-events: none ;
     transition: 0.5s;
-  }
+ }
 
  .input-group input:focus ~ label,
  .input-group input:valid ~ label,
@@ -453,10 +464,18 @@
     color: white;
  }
 
- textarea {
+ textarea{
    padding:5px 10px;
  }
 
+ .email-button-div {
+    display: flex;
+    justify-content: center;
+ }
+
+ .email-button {
+    margin: 0;
+ }
 
 /*contakt -> other contact*/
 
