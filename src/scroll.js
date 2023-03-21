@@ -1,5 +1,5 @@
-const proba = document.querySelector('.js-menüText');
-const banner = document.querySelector('.js-banner');
+const proba = document.querySelector('.js-hero-div');
+const banner = document.querySelector('.js-hero-section');
 const button = document.querySelector('.js-button');
 
 //banner.style.backgroundSize ="100vw";

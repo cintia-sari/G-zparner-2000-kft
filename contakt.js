@@ -1,11 +1,11 @@
-const írjNekünk = document.querySelector(".írjNekünk-js");
-const egyébElérhatőség = document.querySelector(".egyéb-elérhatőség-js");
-const kapcsolat = document.querySelector(".kapcsolatDiv-js");
-const cím = document.querySelector(".kapcsolat-cím-js");
+const writeToUs = document.querySelector(".write-to-us-js");
+const otherContact = document.querySelector(".other-contact-js");
+const connectionMap = document.querySelector(".connection-map-js");
+const address = document.querySelector(".address-js");
 
-function addKapcsolat(){
+function addEmailBox(){
     let html =`
-    <div class="email.box">
+    <div class="email-box">
     <div class="email">
         <form action="#" method="post" class="contact-contanier">
             <div class="input-group">
@@ -34,8 +34,7 @@ function addKapcsolat(){
                     name="message"
                     autocomplete="off"
                     class="input"
-                    >
-                </textarea>
+                    ></textarea>
                 <label class="user-label">Message:</label>
             </div>
             <div class="button.div">
@@ -48,7 +47,7 @@ function addKapcsolat(){
     return html
 }
 
-function addEgyébElérhatőség (){
+function addOtherOptionBox (){
     html = `
                 <div class="egyéb-elérhetőség-container">
                     <div class="egyéb-elérhetőség-div">
@@ -96,19 +95,18 @@ function addMap () {
     return html;
 }
 
-kapcsolat.innerHTML= addKapcsolat();
+connectionMap.innerHTML= addEmailBox();
 
 
-írjNekünk.addEventListener("click", function(){
-    kapcsolat.innerHTML= addKapcsolat();
+writeToUs.addEventListener("click", function(){
+    connectionMap.innerHTML= addEmailBox();
 })
 
-egyébElérhatőség.addEventListener("click", function() {
-    console.log("egyéb")
-    kapcsolat.innerHTML= addEgyébElérhatőség();
+otherContact.addEventListener("click", function() {
+    connectionMap.innerHTML= addOtherOptionBox();
 })
 
-cím.addEventListener("click", function(){
-    kapcsolat.innerHTML= addMap();
+address.addEventListener("click", function(){
+    connectionMap.innerHTML= addMap();
 })
 

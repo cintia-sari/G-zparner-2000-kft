@@ -1,6 +1,6 @@
 const leftBtn = document.querySelector(".picture-button-left-js");
 const rightBtn = document.querySelector(".picture-button-right-js")
-const pictureDiv = document.querySelector(".képek-div-js");
+const pictureDiv = document.querySelector(".picture-div-js");
 let pictureIndex= 1;
 
 // képeket tartalmazó mappa
