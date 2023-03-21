@@ -5,7 +5,6 @@
     --white-color: white;
     --light-white-color:#ebe6e6;
     --black-color:#0b0b0b;
-    --
  }
  
  /*basic editing */
@@ -370,6 +369,11 @@
  .picture-button-div .button {
     margin:0 10px;
     cursor: pointer;
+ }
+
+ .picture-button-div .button img {
+    height: 20px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(108deg) brightness(99%) contrast(99%);
  }
 
 
