@@ -12,8 +12,7 @@ They wanted a new website to replace the old one. The main idea was a modern, cl
 
 ## funkcionalitás:
 
-* 
-The website has 5 main sections: main page, services, our profile, pictures, contact
+* The website has 5 main sections: main page, services, our profile, pictures, contact
 
 * 3 more sections within the connection:
 write to us, other, contact information, address
