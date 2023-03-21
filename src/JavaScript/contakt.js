@@ -48,31 +48,31 @@ function addEmailBox(){
 
 function addOtherOptionBox (){
     html = `
-                <div class="egyéb-elérhetőség-container">
-                    <div class="egyéb-elérhetőség-div">
-                        <h3 class="kapcsolat-név">Molnár Gábor:</h3>
-                        <h4 class="kapcsolat-elérhetőség">+36-20-9451542</h4>
-                        <h4 class="kapcsolat-elérhetőség">molnargabor.@gazpartner.axelero.net</h4>
+                <div class="other-contact-container">
+                    <div class="other-contact-container">
+                        <h3 class="contact-name">Molnár Gábor:</h3>
+                        <h4 class="contacat-availability">+36-20-9451542</h4>
+                        <h4 class="contacat-availability">molnargabor.@gazpartner.axelero.net</h4>
                     </div>
-                    <div class="egyéb-elérhetőség-div">
-                        <h3 class="kapcsolat-név">Sári István:</h3>
-                        <h4 class="kapcsolat-elérhetőség">+36-20-9278466</h4>
-                        <h4 class="kapcsolat-elérhetőség">sariistván.@gazpartner.axelero.net</h4>
+                    <div class="other-contact-container">
+                        <h3 class="contact-name">Sári István:</h3>
+                        <h4 class="contacat-availability">+36-20-9278466</h4>
+                        <h4 class="contacat-availability">sariistván.@gazpartner.axelero.net</h4>
                     </div>
-                    <div class="egyéb-elérhetőség-div">
-                        <h3 class="kapcsolat-név">Molnár Gáborné:</h3>
-                        <h4 class="kapcsolat-elérhetőség">+36-20-9896855</h4>
-                        <h4 class="kapcsolat-elérhetőség">andrea.molnár@gazpartner.axelero.net</h4>
+                    <div class="other-contact-container">
+                        <h3 class="contact-name">Molnár Gáborné:</h3>
+                        <h4 class="contacat-availability">+36-20-9896855</h4>
+                        <h4 class="contacat-availability">andrea.molnár@gazpartner.axelero.net</h4>
                     </div>
-                    <div class="egyéb-elérhetőség-div">
-                        <h3 class="kapcsolat-név">Sebők Dávid:</h3>
-                        <h4 class="kapcsolat-elérhetőség">+36-20-9896853</h4>
+                    <div class="other-contact-container">
+                        <h3 class="contact-name">Sebők Dávid:</h3>
+                        <h4 class="contacat-availability">+36-20-9896853</h4>
                     </div>
-                    <div class="egyéb-elérhetőség-div">
-                        <h3 class="kapcsolat-név">Egyéb:</h3>
-                        <h4 class="kapcsolat-elérhetőség">gazpartner@t-online.hu</h4>
-                        <h4 class="kapcsolat-elérhetőség">06-96-556-084</h4>
-                        <h4 class="kapcsolat-elérhetőség">06-96-447-560</h4>
+                    <div class="other-contact-container">
+                        <h3 class="contact-name">Egyéb:</h3>
+                        <h4 class="contacat-availability">gazpartner@t-online.hu</h4>
+                        <h4 class="contacat-availability">06-96-556-084</h4>
+                        <h4 class="contacat-availability">06-96-447-560</h4>
                     </div>
                 </div>
              

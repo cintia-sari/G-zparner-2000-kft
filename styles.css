@@ -381,6 +381,11 @@
 
  /*contakt*/
 
+ #contakt{
+   min-height: 800px;
+   max-height: 1300px;
+ }
+
  .contakt-button-container {
     display: flex;
     flex-direction: column;
@@ -489,14 +494,14 @@
     padding-bottom: 80px;
  }
 
- #contakt .connection-map-div .egyéb-elérhetőség-container {
+ #contakt .connection-map-div .other-contact-container {
    margin:0 15% ;
    display: flex;
    flex-wrap: wrap;
    justify-content:center
  }
 
- #contakt .connection-map-div div .egyéb-elérhetőség-div {
+ #contakt .connection-map-div div .other-contact-container {
     display: inline-block;
     border:1px solid var(--yellow-color);
     box-shadow: 5px 5px 15px var(--yellow-color);
@@ -505,15 +510,21 @@
     padding:15px;
  }
 
- .kapcsolat-név {
+ .contact-name {
     font-size: 20px;
     margin:15px;
  }
 
- .kapcsolat-elérhetőség {
+ .contacat-availability {
     font-size: 15px;
     margin: 5px;
     margin-left: 30px;
+    text-overflow:ellipsis;
+ }
+
+ .other-contact-container h4{
+   text-overflow:ellipsis;
+   overflow: hidden;
  }
 
 
@@ -534,6 +545,42 @@
     border:1px solid var(--yellow-color);
     box-shadow: 5px 5px 15px var(--yellow-color);
  }
+
+
+ /*footer*/
+
+ footer{
+   margin-top: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   flex-wrap: wrap;
+   background-color: #0f0f0f;
+   padding:40px 10px;
+ }
+
+ .footer-menu{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:center;
+   margin-bottom:20px;
+ }
+
+ .footer-menu a:hover,
+ .footer-copyright:hover{
+   color:var(--yellow-color);
+   cursor: pointer;
+ }
+
+ .footer-copyright,
+ .footer-menu a {
+   text-align: center;
+   margin-right:20px;
+   font-size: 15px;
+   color: rgba(255, 255, 255, 0.308);
+ }
+
+
 
 
  @media screen and (min-width: 720px){}
