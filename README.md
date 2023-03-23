@@ -10,7 +10,7 @@ I am creating their own website for one of my clients. Currently, the final touc
 
 They wanted a new website to replace the old one. The main idea was a modern, clean one-page website. It was important for them that the main color of their logo, yellow, should also return to the website. That is why the choice was made for the black background color.
 
-## funkcionalitás:
+## functionalization:
 
 * The website has 5 main sections: main page, services, our profile, pictures, contact
 
